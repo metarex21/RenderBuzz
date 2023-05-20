@@ -21,8 +21,13 @@ def get_alert_tone_path():
     # Specify the alert tone file name
     alert_tone_file = "alert_tone.wav"
 
-    # Construct the path to the alert tone file
-    alert_tone_path = os.path.join(script_directory, alert_tone_file)
+    # Construct the path to the alert tone file based on the platform
+    if platform.system() == "Windows":
+        alert_tone_path = os.path.join(script_directory, alert_tone_file)
+    elif platform.system() == "Darwin":
+        alert_tone_path = os.path.join(script_directory, "alert_tone.wav")
+    else:  # Linux
+        alert_tone_path = os.path.join(script_directory, "alert_tone.wav")
 
     return alert_tone_path
 
