@@ -29,4 +29,4 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 
 ## License
 
-RenderBuzz is released under the [MIT License](LICENSE).
+RenderBuzz is released under the [GNU General Public License v3.0 (GPL-3.0)](LICENSE).
